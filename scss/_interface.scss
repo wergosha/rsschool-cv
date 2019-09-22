@@ -13,6 +13,7 @@ body {
 
 li {
     list-style: none;
+    margin-bottom: 10px;
 }
 
 hr {
@@ -22,4 +23,8 @@ hr {
     box-shadow: none;
     border: 2px;
     background-color: grey;
+}
+
+a {
+    text-decoration: none;
 }

@@ -11,6 +11,7 @@
     &__list {
         padding-left: 0;
         &-item {
+            @include bold;
             margin-bottom: 10px;
             &:last-child {
                 margin-bottom: 0;

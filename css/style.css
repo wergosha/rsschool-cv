@@ -38,6 +38,7 @@ body {
 
 li {
   list-style: none;
+  margin-bottom: 10px;
 }
 
 hr {
@@ -48,6 +49,10 @@ hr {
           box-shadow: none;
   border: 2px;
   background-color: grey;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header-info {
@@ -79,6 +84,7 @@ hr {
 }
 
 .header-info__list-item {
+  font-family: 'Proxima Nova Semibold', sans-serif;
   margin-bottom: 10px;
 }
 
