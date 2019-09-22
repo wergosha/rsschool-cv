@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Resume</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-info">
+                <img src="img/image.png" alt="image" class="header-info__image">
+                <div class="header-info__contacts">
+                    <h1 class="header-info__name">Kirill Malakha</h1>
+                    <ul class="header-info__list">
+                        <li class="header-info__list-item">E-mail: <a href="maitlo:wergoshqua@gmail.com">wergoshqua@gmail.com</a></li>
+                        <li class="header-info__list-item">Phone: <a href="tel:+79011613825">+ 7 (901) 161 38 25</a></li>
+                        <li class="header-info__list-item">Github: <a href="http://github.com/wergosha">wergosha</a></li>
+                        <li class="header-info__list-item">Telegram: <a href="https://telegram.me/wergosha">@wergosha</a></li>
+                    </ul>
+                </div>
+                <!-- /.header__info -->
+            </div>
+            <!-- /.header -->
+        <hr>
+        </div>
+    </header>
+    <main>
+        <section class="skills">
+            <div class="container">
+                <h2 class="skills-title">Skills:</h2>
+                <!-- /.skills-title -->
+                <ul class="skills-list">
+                    <li>HTML5/CSS3 - novice;</li>
+                    <li>Python - novice;</li>
+                    <li>JS - going to learn;</li>
+                    <li>React - going to learn.</li>
+                </ul>
+                <!-- /.skills-list -->
+            </div>
+        </section>
+        <!-- /.skills -->
+        <section class="code">
+            <div class="container">
+                <h2 class="code-title">Code example:</h2>
+                <!-- /.scode-title -->
+                <code class="code-item">
+                    $(document).ready(function(){<br>
+                    &nbsp;&nbsp;var headerSlider = $('#headerSlider');<br>
+                    &nbsp;&nbsp;headerSlider.on('initialized.owl.carousel', function(event){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.slider-control__number-active').text(event.item.index + 1)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.slider-control__number-total').text(event.item.count)<br>
+                    &nbsp;&nbsp;});<br>
+                    &nbsp;&nbsp;headerSlider.owlCarousel({<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;items: 1,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;//loop: true,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;dots: false,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;smartSpeed: 1000,<br>
+                    &nbsp;&nbsp;}); <br>
+                    &nbsp;&nbsp;$('#headerSliderRight').click(function() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;headerSlider.trigger('next.owl.carousel');<br>
+                    &nbsp;&nbsp;})<br>
+                    &nbsp;&nbsp;$('#headerSliderLeft').click(function() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;headerSlider.trigger('prev.owl.carousel');<br>
+                    &nbsp;&nbsp;})<br>
+                    &nbsp;&nbsp;headerSlider.on('changed.owl.carousel', function(event){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.slider-control__number-active').text(event.item.index + 1)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.slider-control__number-total').text(event.item.count)<br>
+                    &nbsp;&nbsp;});<br>
+                    });<br>
+                </code>
+                <!-- /.code-item -->
+            </div>
+        </section>
+        <section class="websites">
+            <div class="container">
+                <h2>Websites:</h2>
+                <span>I try to develop a simple landing page websites</span>
+                <ul>
+                    <li><a href="https://wergosha.github.io/surfclub/">Surf club</a></li>
+                    <li><a href="https://wergosha.github.io/skinali/">Skinali</a></li>
+                </ul>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.websites -->
+        <section class="edu">
+            <div class="container">
+                <h2 class="edu-title">Education:</h2>
+                <span>I have done basic courses of HTML/CSS on the HTMLAcademy. Also watching education YouTube channels like:</span>
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCVswRUcKC-M35RzgPRv8qUg">Glo Academy</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCTW0FUhT0m-Bqg2trTbSs0g">IT-KAMASUTRA</a></li>
+                    <li><a href="https://www.youtube.com/channel/UClb90NQQcskPUGDIXsQEz5Q">Dev Ed</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCBB1kqYMWUrSxrQkq8BYzZA">WebCademy</a></li>
+                </ul>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.edu -->
+        <section class="english">
+            <div class="container">
+                <h2>English level:</h2>
+                <p>I studied English at school. For now I use English in a buiseness case to speak with customers from China and Europe. But I really don't know what level of English I have. In this time we have an online translaters which help to speak/write in not native language. I can read technical documentation in English.</p>
+            </div>
+        </section>
+        <!-- /.english -->
+    </main>  
+    <footer>
+        <div class="container">
+            <hr>
+            <p class="footer-text">Kirill Malakha, 2019</p>
+        </div>
+    </footer>  
+</body>
+</html>
