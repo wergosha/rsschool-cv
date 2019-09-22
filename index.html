@@ -43,6 +43,50 @@
             </div>
         </section>
         <!-- /.skills -->
+        <section class="code">
+            <div class="container">
+                <h2 class="code-title">Code example:</h2>
+                <!-- /.scode-title -->
+                <code class="code-item">
+                    $(document).ready(function(){<br>
+                    &nbsp;&nbsp;var headerSlider = $('#headerSlider');<br>
+                    &nbsp;&nbsp;headerSlider.on('initialized.owl.carousel', function(event){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.slider-control__number-active').text(event.item.index + 1)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.slider-control__number-total').text(event.item.count)<br>
+                    &nbsp;&nbsp;});<br>
+                    &nbsp;&nbsp;headerSlider.owlCarousel({<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;items: 1,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;//loop: true,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;dots: false,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;smartSpeed: 1000,<br>
+                    &nbsp;&nbsp;}); <br>
+                    &nbsp;&nbsp;$('#headerSliderRight').click(function() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;headerSlider.trigger('next.owl.carousel');<br>
+                    &nbsp;&nbsp;})<br>
+                    &nbsp;&nbsp;$('#headerSliderLeft').click(function() {<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;headerSlider.trigger('prev.owl.carousel');<br>
+                    &nbsp;&nbsp;})<br>
+                    &nbsp;&nbsp;headerSlider.on('changed.owl.carousel', function(event){<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.slider-control__number-active').text(event.item.index + 1)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;$('.slider-control__number-total').text(event.item.count)<br>
+                    &nbsp;&nbsp;});<br>
+                    });<br>
+                </code>
+                <!-- /.code-item -->
+            </div>
+        </section>
+        <section class="websites">
+            <div class="container">
+                <h2>Websites</h2>
+                <span>I try to develop a simple landing page websites</span>
+                <ul>
+                    <li><a href="https://wergosha.github.io/surfclub/">Surf club</a></li>
+                    <li><a href="https://wergosha.github.io/skinali/">Skinali</a></li>
+                </ul>
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.websites -->
     </main>    
     
 </body>

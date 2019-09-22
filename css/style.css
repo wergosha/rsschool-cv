@@ -55,6 +55,47 @@ a {
   text-decoration: none;
 }
 
+section {
+  margin-bottom: 50px;
+}
+
+.header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+
+.header-info__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header-info__list {
+  padding-left: 0;
+}
+
+.header-info__list-item {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  margin-bottom: 10px;
+}
+
+.header-info__list-item:last-child {
+  margin-bottom: 0;
+}
+
 .header-info {
   display: -webkit-box;
   display: -ms-flexbox;
