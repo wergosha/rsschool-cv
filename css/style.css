@@ -132,4 +132,9 @@ section {
 .header-info__list-item:last-child {
   margin-bottom: 0;
 }
+
+.footer-text {
+  text-align: right;
+  margin-right: 50px;
+}
 /*# sourceMappingURL=style.css.map */
